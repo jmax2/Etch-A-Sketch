@@ -23,3 +23,8 @@ button:hover {
     background-color: rgb(94, 27, 156);
    
 }
+
+.box{
+    display: flex;
+    justify-content: space-around;
+}
