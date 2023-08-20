@@ -1,14 +1,25 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 320px;
-    /* Adjust the width according to your preference */
+    width: 480px;
 }
 
 .grid-square {
-    width: 20px;
-    /* Adjust the width and height according to your preference */
-    height: 20px;
-    border: 1px solid black;
+    width: calc(480px / var(--squares-per-side));
+    height: calc(480px / var(--squares-per-side));
+    border: 1px solid rgb(15, 89, 136);
     box-sizing: border-box;
+}
+
+button{
+    margin: 5px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 12px;
+    border: 2px solid blue;
+}
+
+button:hover {
+    background-color: rgb(94, 27, 156);
+   
 }
